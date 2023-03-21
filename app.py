@@ -3,6 +3,7 @@ from flask import Flask, redirect
 import rq_dashboard
 from rq_dashboard.cli import add_basic_auth
 
+#comment
 app = Flask(__name__)
 app.config.from_object(rq_dashboard.default_settings)
 app.config["RQ_DASHBOARD_REDIS_URL"] = os.environ.get("RQ_DASHBOARD_REDIS_URL")
